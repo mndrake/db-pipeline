@@ -23,6 +23,7 @@
       },
       "Targetairlines" : {
         "component" : "Target",
+        "group" : null,
         "properties" : {
           "interim" : false,
           "cache" : false,
@@ -58,7 +59,7 @@
     "groups" : [ ],
     "locked" : false,
     "metainfo" : {
-      "lastUpdated" : 1614382902860,
+      "lastUpdated" : 1614382928930,
       "id" : "initialpipeline",
       "memory" : 1,
       "imported" : true,
