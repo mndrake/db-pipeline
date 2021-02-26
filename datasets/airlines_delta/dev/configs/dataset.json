@@ -1,19 +1,17 @@
 {
-  "datasetId" : "769",
-  "schema" : null,
-  "datasetType" : "Table",
-  "description" : "",
-  "commonProperties" : {
-    "properties" : {
-      "tableName" : "airlines",
-      "databaseName" : "dave_carlson_databricks_com_db"
-    }
-  },
-  "dataFormat" : "hive",
   "outputProperties" : {
     "properties" : {
-      "mode" : "overwrite",
-      "provider" : "delta"
+      "mode" : "overwrite"
     }
-  }
+  },
+  "commonProperties" : {
+    "properties" : {
+      "location" : "dbfs:/home/dave.carlson@databricks.com/datasets/airlines"
+    }
+  },
+  "datasetId" : "769",
+  "schema" : null,
+  "datasetType" : "File",
+  "description" : "",
+  "dataFormat" : "delta"
 }
