@@ -4,8 +4,8 @@ from pyspark.sql import SparkSession
 class Main:
 
     def graph(self, spark: SparkSession):
-        df_airlines: Source = airlines(spark)
-        Target0(spark, df_airlines)
+        df_Sourceairlines: Source = Sourceairlines(spark)
+        Targetairlines(spark, df_Sourceairlines)
 
     def main(self):
         spark = SparkSession.builder.appName("initialpipeline").getOrCreate()

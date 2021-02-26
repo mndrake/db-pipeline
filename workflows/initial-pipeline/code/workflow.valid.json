@@ -1,8 +1,9 @@
 {
   "graph" : {
     "processes" : {
-      "airlines" : {
+      "Sourceairlines" : {
         "component" : "Source",
+        "group" : null,
         "properties" : {
           "interim" : false,
           "cache" : false,
@@ -10,7 +11,7 @@
           "version" : 0
         },
         "metadata" : {
-          "label" : "airlines",
+          "label" : "Source-airlines",
           "x" : 171,
           "y" : 50
         },
@@ -20,7 +21,7 @@
         },
         "lineage" : ""
       },
-      "Target0" : {
+      "Targetairlines" : {
         "component" : "Target",
         "properties" : {
           "interim" : false,
@@ -29,7 +30,7 @@
           "version" : 0
         },
         "metadata" : {
-          "label" : "Target0",
+          "label" : "Target-airlines",
           "x" : 290,
           "y" : 50
         },
@@ -42,22 +43,22 @@
     },
     "connections" : [ {
       "src" : {
-        "process" : "airlines",
+        "process" : "Sourceairlines",
         "port" : "out"
       },
       "tgt" : {
-        "process" : "Target0",
+        "process" : "Targetairlines",
         "port" : "in"
       },
       "metadata" : {
-        "route" : "e_BkdrN$wG_"
+        "route" : "e_HJ_1vZvf_"
       },
       "lineage" : ""
     } ],
     "groups" : [ ],
     "locked" : false,
     "metainfo" : {
-      "lastUpdated" : 1614382152362,
+      "lastUpdated" : 1614382902860,
       "id" : "initialpipeline",
       "memory" : 1,
       "imported" : true,

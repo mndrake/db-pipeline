@@ -4,9 +4,9 @@ from pyspark.sql.functions import *
 from ..config import Config
 from ..prophecylibs import *
 
-@Visual(id = "airlines", label = "airlines", x = 171, y = 50, phase = 0)
+@Visual(id = "Sourceairlines", label = "Source-airlines", x = 171, y = 50, phase = 0)
 @UsesDataset(id = "768", version = 0)
-def airlines(spark: SparkSession) -> Source:
+def Sourceairlines(spark: SparkSession) -> Source:
     fabric = Config.fabricName
     out = None
 
